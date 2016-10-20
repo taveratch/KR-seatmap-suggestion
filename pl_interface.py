@@ -1,10 +1,7 @@
 from pyswip import Prolog
 
 prolog = Prolog()
-prolog.consult("./pl/seat_map_kind.pl")
-prolog.consult("./pl/seat_map_position.pl")
-prolog.consult("./pl/eat.pl")
-
+prolog.consult("./pl/engine.pl")
 # def fact(string):
 # 	prolog.assertz(string)
 
@@ -47,5 +44,5 @@ prolog.consult("./pl/eat.pl")
 # child = raw_input('Travel with child (yes/no): ')
 # print hasChild(child == "yes")
 
-	
-print str(list(prolog.query("getSeat(X, adam)")))
+
+print str(list(prolog.query("getSeat(X, adam).")))
