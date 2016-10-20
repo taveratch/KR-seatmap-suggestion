@@ -41,12 +41,21 @@ position(private,M) :-
   write('This guy wants private seat'),
   nl.
 
+position(infant,M) :-
+  user_facts:hasInfant(M),
+  write('This guy has infant with him.'),
+  nl,
+  write('His seat should be at middle-front row'),
+  nl.
+
 notNoisy(M) :-
   not(seat_map_position:near(M,toilet)),
   not(seat_map_position:near(M,galley)),
   write('This seat is far from noisy place'),
   nl.
 
-noisy(M) :-
+noisy_warning(M) :-
   seat_map_position:near(M,toilet);
-  seat_map_position:near(M,galley).
+  seat_map_position:near(M,galley),
+  write('This seat may noisy from galley or toilet'),
+  nl.

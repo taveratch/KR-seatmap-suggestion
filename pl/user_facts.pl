@@ -1,5 +1,6 @@
 :- module(user_facts,[]).
-prefers(adam,private) :- false.
+prefers(adam,private) :-false.
 hasChild(adam) :- false.
-age(60,adam).
-tall(180,adam).
+age(40,adam).
+tall(170,adam).
+hasInfant(adam).
