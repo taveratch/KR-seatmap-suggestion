@@ -5,7 +5,7 @@ isOld(M) :-
   X >= 60.
 
 isTall(M) :-
-  user_facts:tall(X,M),
+  user_facts:height(X,M),
   X >= 180.
 
 position(window,M) :-
