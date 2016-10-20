@@ -1,3 +1,4 @@
+:- module(seat_map_kind,[]).
 ako(a32,private).
 ako(a33,private).
 ako(a34,private).

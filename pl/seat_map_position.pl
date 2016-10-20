@@ -1,3 +1,4 @@
+:- module(seat_map_position,[]).
 near(a31, window).
 near(a32, window).
 near(a33, window).

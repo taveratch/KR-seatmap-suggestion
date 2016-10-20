@@ -1,38 +1,37 @@
-prefers(adam,private).
-hasChild(adam).
-isOld(adam) :- false.
-isTall(adam) :- false.
+:- use_module(seat_map_kind,[]).
+:- use_module(seat_map_position,[]).
+:- use_module(user_facts,[]).
 position(window,M) :-
-	hasChild(M),
+	user_facts:hasChild(M),
 	write('This guy has children with him'),
 	nl,
 	write('His seat should be near window'),
 	nl.
 position(exitRow,M) :-
-  isTall(M),
+  user_facts:isTall(M),
 	write('This guy is tall'),
 	nl,
 	write('His seat should be near exitRow'),
 	nl.
 position(walkway,M) :-
-  isOld(M),
+  user_facts:isOld(M),
   write('This guy is old'),
   nl,
   write('His seat should be near walkway'),
   nl.
 position(exitRow,M) :-
-  isOld(M),
+  user_facts:isOld(M),
   write('This guy is old'),
   nl,
   write('His seat should be near exitRow'),
   nl.
 property(private,M) :-
-  prefers(M,private),
+  user_facts:prefers(M,private),
   write('This guy wants private seat'),
   nl.
 noisy(M) :-
-  near(M,toilet);
-  near(M,galley).
+  seat_map_position:near(M,toilet);
+  seat_map_position:near(M,galley).
 
 filter_private(X,W,M) :-
   (property(private,M)
@@ -43,5 +42,4 @@ getSeat(X,M) :-
 	write('Getting seat'),
 	nl,
 	position(Y,M),
-	near(X,Y),
-  filter_private(X,private,M).
+	seat_map_position:near(X,Y).
