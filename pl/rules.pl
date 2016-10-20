@@ -41,6 +41,12 @@ position(private,M) :-
   write('This guy wants private seat'),
   nl.
 
+notNoisy(M) :-
+  not(seat_map_position:near(M,toilet)),
+  not(seat_map_position:near(M,galley)),
+  write('This seat is far from noisy place'),
+  nl.
+
 noisy(M) :-
   seat_map_position:near(M,toilet);
   seat_map_position:near(M,galley).

@@ -7,4 +7,5 @@ getSeat(X,M) :-
   write('Getting seat'),
   nl,
   rules:position(Position,M),
-  seat_map_position:near(X,Position).
+  seat_map_position:near(X,Position),
+  rules:notNoisy(X).
