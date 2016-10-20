@@ -1,4 +1,13 @@
 :- module(rules,[]).
+
+isOld(M) :-
+  user_facts:age(X,M),
+  X >= 60.
+
+isTall(M) :-
+  user_facts:tall(X,M),
+  X >= 180.
+
 position(window,M) :-
 	user_facts:hasChild(M),
 	write('This guy has children with him'),
@@ -7,21 +16,21 @@ position(window,M) :-
 	nl.
 
 position(exitRow,M) :-
-  user_facts:isTall(M),
+  isTall(M),
 	write('This guy is tall'),
 	nl,
 	write('His seat should be near exitRow'),
 	nl.
 
 position(walkway,M) :-
-  user_facts:isOld(M),
+  isOld(M),
   write('This guy is old'),
   nl,
   write('His seat should be near walkway'),
   nl.
 
 position(exitRow,M) :-
-  user_facts:isOld(M),
+  isOld(M),
   write('This guy is old'),
   nl,
   write('His seat should be near exitRow'),
