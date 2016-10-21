@@ -1,10 +1,105 @@
 :- module(seat_map_position,[]).
+near(a1,window).
+near(a1,toilet).
+near(a1,walkway).
+near(a1,galley) :- false.
+near(a1,exitRow).
+near(a1,private).
+near(a1,infant) :- false.
+
+near(e1,window) :- false.
+near(e1,toilet).
+near(e1,walkway).
+near(e1,galley).
+near(e1,exitRow).
+near(e1,private).
+near(e1,infant) :- false.
+
+near(f1,window) :- false.
+near(f1,toilet) :- false.
+near(f1,walkway).
+near(f1,galley).
+near(f1,exitRow).
+near(f1,private).
+near(f1,infant) :- false.
+
+near(k1,window).
+near(k1,toilet) :- false.
+near(k1,walkway).
+near(k1,galley) :- false.
+near(k1,exitRow).
+near(k1,private).
+near(k1,infant) :- false.
+
+near(a2,window).
+near(a2,toilet) :- false.
+near(a2,walkway).
+near(a2,galley) :- false.
+near(a2,exitRow).
+near(a2,private).
+near(a2,infant) :- false.
+
+near(e2,window) :- false.
+near(e2,toilet) :- false.
+near(e2,walkway).
+near(e2,galley) :- false.
+near(e2,exitRow).
+near(e2,private).
+near(e2,infant) :- false.
+
+near(f2,window) :- false.
+near(f2,toilet) :- false.
+near(f2,walkway).
+near(f2,galley) :- false.
+near(f2,exitRow).
+near(f2,private).
+near(f2,infant) :- false.
+
+near(k2,window).
+near(k2,toilet) :- false.
+near(k2,walkway).
+near(k2,galley) :- false.
+near(k2,exitRow).
+near(k2,private).
+near(k2,infant) :- false.
+
+near(a3,window).
+near(a3,toilet) :- false.
+near(a3,walkway).
+near(a3,galley).
+near(a3,exitRow).
+near(a3,private).
+near(a3,infant) :- false.
+
+near(e3,window) :- false.
+near(e3,toilet) :- false.
+near(e3,walkway).
+near(e3,galley).
+near(e3,exitRow).
+near(e3,private).
+near(e3,infant) :- false.
+
+near(f3,window) :- false.
+near(f3,toilet).
+near(f3,walkway).
+near(f3,galley).
+near(f3,exitRow).
+near(f3,private).
+near(f3,infant) :- false.
+
+near(k3,window).
+near(k3,toilet).
+near(k3,walkway).
+near(k3,galley) :- false.
+near(k3,exitRow).
+near(k3,private).
+near(k3,infant) :- false.
 
 near(d11,window) :- false.
 near(d11,toilet).
 near(d11,walkway).
 near(d11,galley) :- false.
-near(d11,exitRow) :- false.
+near(d11,exitRow).
 near(d11,private) :- false.
 near(d11,infant).
 
@@ -12,7 +107,7 @@ near(g11,window) :- false.
 near(g11,toilet).
 near(g11,walkway).
 near(g11,galley) :- false.
-near(g11,exitRow) :- false.
+near(g11,exitRow).
 near(g11,private) :- false.
 near(g11,infant).
 
@@ -20,7 +115,7 @@ near(a12,window).
 near(a12,toilet).
 near(a12,walkway).
 near(a12,galley) :- false.
-near(a12,exitRow) :- false.
+near(a12,exitRow).
 near(a12,private) :- false.
 near(a12,infant) :- false.
 
@@ -28,7 +123,7 @@ near(e12,window) :- false.
 near(e12,toilet) :- false.
 near(e12,walkway).
 near(e12,galley) :- false.
-near(e12,exitRow) :- false.
+near(e12,exitRow).
 near(e12,private).
 near(e12,infant) :- false.
 
@@ -36,7 +131,7 @@ near(f12,window) :- false.
 near(f12,toilet) :- false.
 near(f12,walkway).
 near(f12,galley) :- false.
-near(f12,exitRow) :- false.
+near(f12,exitRow).
 near(f12,private).
 near(f12,infant) :- false.
 
@@ -44,7 +139,7 @@ near(k12,window).
 near(k12,toilet).
 near(k12,walkway).
 near(k12,galley) :- false.
-near(k12,exitRow) :- false.
+near(k12,exitRow).
 near(k12,private) :- false.
 near(k12,infant) :- false.
 
@@ -52,7 +147,7 @@ near(b14,window).
 near(b14,toilet) :- false.
 near(b14,walkway).
 near(b14,galley) :- false.
-near(b14,exitRow) :- false.
+near(b14,exitRow).
 near(b14,private).
 near(b14,infant) :- false.
 
@@ -60,7 +155,7 @@ near(d14,window) :- false.
 near(d14,toilet) :- false.
 near(d14,walkway).
 near(d14,galley) :- false.
-near(d14,exitRow) :- false.
+near(d14,exitRow).
 near(d14,private).
 near(d14,infant) :- false.
 
@@ -68,7 +163,7 @@ near(g14,window) :- false.
 near(g14,toilet) :- false.
 near(g14,walkway).
 near(g14,galley) :- false.
-near(g14,exitRow) :- false.
+near(g14,exitRow).
 near(g14,private).
 near(g14,infant) :- false.
 
@@ -76,7 +171,7 @@ near(j14,window) :- false.
 near(j14,toilet) :- false.
 near(j14,walkway).
 near(j14,galley) :- false.
-near(j14,exitRow) :- false.
+near(j14,exitRow).
 near(j14,private).
 near(j14,infant) :- false.
 
@@ -84,7 +179,7 @@ near(a15,window).
 near(a15,toilet) :- false.
 near(a15,walkway).
 near(a15,galley) :- false.
-near(a15,exitRow) :- false.
+near(a15,exitRow).
 near(a15,private).
 near(a15,infant) :- false.
 
@@ -92,7 +187,7 @@ near(e15,window) :- false.
 near(e15,toilet) :- false.
 near(e15,walkway).
 near(e15,galley) :- false.
-near(e15,exitRow) :- false.
+near(e15,exitRow).
 near(e15,private).
 near(e15,infant) :- false.
 
@@ -100,7 +195,7 @@ near(f15,window) :- false.
 near(f15,toilet) :- false.
 near(f15,walkway).
 near(f15,galley) :- false.
-near(f15,exitRow) :- false.
+near(f15,exitRow).
 near(f15,private).
 near(f15,infant) :- false.
 
@@ -108,7 +203,7 @@ near(k15,window).
 near(k15,toilet) :- false.
 near(k15,walkway).
 near(k15,galley) :- false.
-near(k15,exitRow) :- false.
+near(k15,exitRow).
 near(k15,private).
 near(k15,infant) :- false.
 
@@ -116,7 +211,7 @@ near(b16,window).
 near(b16,toilet) :- false.
 near(b16,walkway).
 near(b16,galley) :- false.
-near(b16,exitRow) :- false.
+near(b16,exitRow).
 near(b16,private).
 near(b16,infant) :- false.
 
@@ -124,7 +219,7 @@ near(d16,window) :- false.
 near(d16,toilet) :- false.
 near(d16,walkway).
 near(d16,galley) :- false.
-near(d16,exitRow) :- false.
+near(d16,exitRow).
 near(d16,private).
 near(d16,infant) :- false.
 
@@ -132,7 +227,7 @@ near(g16,window) :- false.
 near(g16,toilet) :- false.
 near(g16,walkway).
 near(g16,galley) :- false.
-near(g16,exitRow) :- false.
+near(g16,exitRow).
 near(g16,private).
 near(g16,infant) :- false.
 
@@ -140,7 +235,7 @@ near(j16,window).
 near(j16,toilet) :- false.
 near(j16,walkway).
 near(j16,galley) :- false.
-near(j16,exitRow) :- false.
+near(j16,exitRow).
 near(j16,private).
 near(j16,infant) :- false.
 
@@ -148,7 +243,7 @@ near(a17,window).
 near(a17,toilet) :- false.
 near(a17,walkway).
 near(a17,galley) :- false.
-near(a17,exitRow) :- false.
+near(a17,exitRow).
 near(a17,private).
 near(a17,infant) :- false.
 
@@ -156,7 +251,7 @@ near(e17,window) :- false.
 near(e17,toilet) :- false.
 near(e17,walkway).
 near(e17,galley) :- false.
-near(e17,exitRow) :- false.
+near(e17,exitRow).
 near(e17,private).
 near(e17,infant) :- false.
 
@@ -164,7 +259,7 @@ near(f17,window) :- false.
 near(f17,toilet) :- false.
 near(f17,walkway).
 near(f17,galley) :- false.
-near(f17,exitRow) :- false.
+near(f17,exitRow).
 near(f17,private).
 near(f17,infant) :- false.
 
@@ -172,7 +267,7 @@ near(k17,window).
 near(k17,toilet) :- false.
 near(k17,walkway).
 near(k17,galley) :- false.
-near(k17,exitRow) :- false.
+near(k17,exitRow).
 near(k17,private).
 near(k17,infant) :- false.
 
@@ -180,7 +275,7 @@ near(b18,window).
 near(b18,toilet) :- false.
 near(b18,walkway).
 near(b18,galley) :- false.
-near(b18,exitRow) :- false.
+near(b18,exitRow).
 near(b18,private).
 near(b18,infant) :- false.
 
@@ -188,7 +283,7 @@ near(d18,window) :- false.
 near(d18,toilet) :- false.
 near(d18,walkway).
 near(d18,galley) :- false.
-near(d18,exitRow) :- false.
+near(d18,exitRow).
 near(d18,private).
 near(d18,infant) :- false.
 
@@ -196,7 +291,7 @@ near(g18,window) :- false.
 near(g18,toilet) :- false.
 near(g18,walkway).
 near(g18,galley) :- false.
-near(g18,exitRow) :- false.
+near(g18,exitRow).
 near(g18,private).
 near(g18,infant) :- false.
 
@@ -204,7 +299,7 @@ near(j18,window).
 near(j18,toilet) :- false.
 near(j18,walkway).
 near(j18,galley) :- false.
-near(j18,exitRow) :- false.
+near(j18,exitRow).
 near(j18,private).
 near(j18,infant) :- false.
 
@@ -212,7 +307,7 @@ near(a19,window).
 near(a19,toilet) :- false.
 near(a19,walkway).
 near(a19,galley) :- false.
-near(a19,exitRow) :- false.
+near(a19,exitRow).
 near(a19,private).
 near(a19,infant) :- false.
 
@@ -220,7 +315,7 @@ near(e19,window) :- false.
 near(e19,toilet) :- false.
 near(e19,walkway).
 near(e19,galley) :- false.
-near(e19,exitRow) :- false.
+near(e19,exitRow).
 near(e19,private).
 near(e19,infant) :- false.
 
@@ -228,7 +323,7 @@ near(f19,window) :- false.
 near(f19,toilet) :- false.
 near(f19,walkway).
 near(f19,galley) :- false.
-near(f19,exitRow) :- false.
+near(f19,exitRow).
 near(f19,private).
 near(f19,infant) :- false.
 
@@ -236,7 +331,7 @@ near(k19,window).
 near(k19,toilet) :- false.
 near(k19,walkway).
 near(k19,galley) :- false.
-near(k19,exitRow) :- false.
+near(k19,exitRow).
 near(k19,private).
 near(k19,infant) :- false.
 
@@ -244,7 +339,7 @@ near(b20,window).
 near(b20,toilet) :- false.
 near(b20,walkway).
 near(b20,galley) :- false.
-near(b20,exitRow) :- false.
+near(b20,exitRow).
 near(b20,private).
 near(b20,infant) :- false.
 
@@ -252,7 +347,7 @@ near(d20,window) :- false.
 near(d20,toilet) :- false.
 near(d20,walkway).
 near(d20,galley) :- false.
-near(d20,exitRow) :- false.
+near(d20,exitRow).
 near(d20,private).
 near(d20,infant) :- false.
 
@@ -260,7 +355,7 @@ near(g20,window) :- false.
 near(g20,toilet) :- false.
 near(g20,walkway).
 near(g20,galley) :- false.
-near(g20,exitRow) :- false.
+near(g20,exitRow).
 near(g20,private).
 near(g20,infant) :- false.
 
@@ -268,7 +363,7 @@ near(j20,window).
 near(j20,toilet) :- false.
 near(j20,walkway).
 near(j20,galley) :- false.
-near(j20,exitRow) :- false.
+near(j20,exitRow).
 near(j20,private).
 near(j20,infant) :- false.
 
@@ -276,7 +371,7 @@ near(a21,window).
 near(a21,toilet) :- false.
 near(a21,walkway).
 near(a21,galley) :- false.
-near(a21,exitRow) :- false.
+near(a21,exitRow).
 near(a21,private).
 near(a21,infant) :- false.
 
@@ -284,7 +379,7 @@ near(e21,window) :- false.
 near(e21,toilet) :- false.
 near(e21,walkway).
 near(e21,galley) :- false.
-near(e21,exitRow) :- false.
+near(e21,exitRow).
 near(e21,private).
 near(e21,infant) :- false.
 
@@ -292,7 +387,7 @@ near(f21,window) :- false.
 near(f21,toilet) :- false.
 near(f21,walkway).
 near(f21,galley) :- false.
-near(f21,exitRow) :- false.
+near(f21,exitRow).
 near(f21,private).
 near(f21,infant) :- false.
 
@@ -300,7 +395,7 @@ near(k21,window).
 near(k21,toilet) :- false.
 near(k21,walkway).
 near(k21,galley) :- false.
-near(k21,exitRow) :- false.
+near(k21,exitRow).
 near(k21,private).
 near(k21,infant) :- false.
 
@@ -308,7 +403,7 @@ near(b22,window).
 near(b22,toilet) :- false.
 near(b22,walkway).
 near(b22,galley) :- false.
-near(b22,exitRow) :- false.
+near(b22,exitRow).
 near(b22,private).
 near(b22,infant) :- false.
 
@@ -316,7 +411,7 @@ near(d22,window) :- false.
 near(d22,toilet) :- false.
 near(d22,walkway).
 near(d22,galley) :- false.
-near(d22,exitRow) :- false.
+near(d22,exitRow).
 near(d22,private).
 near(d22,infant) :- false.
 
@@ -324,7 +419,7 @@ near(g22,window) :- false.
 near(g22,toilet) :- false.
 near(g22,walkway).
 near(g22,galley) :- false.
-near(g22,exitRow) :- false.
+near(g22,exitRow).
 near(g22,private).
 near(g22,infant) :- false.
 
@@ -332,7 +427,7 @@ near(j22,window).
 near(j22,toilet) :- false.
 near(j22,walkway).
 near(j22,galley) :- false.
-near(j22,exitRow) :- false.
+near(j22,exitRow).
 near(j22,private).
 near(j22,infant) :- false.
 
@@ -340,7 +435,7 @@ near(a23,window).
 near(a23,toilet) :- false.
 near(a23,walkway).
 near(a23,galley) :- false.
-near(a23,exitRow) :- false.
+near(a23,exitRow).
 near(a23,private).
 near(a23,infant) :- false.
 
@@ -348,7 +443,7 @@ near(e23,window) :- false.
 near(e23,toilet).
 near(e23,walkway).
 near(e23,galley) :- false.
-near(e23,exitRow) :- false.
+near(e23,exitRow).
 near(e23,private).
 near(e23,infant) :- false.
 
@@ -356,7 +451,7 @@ near(f23,window) :- false.
 near(f23,toilet).
 near(f23,walkway).
 near(f23,galley) :- false.
-near(f23,exitRow) :- false.
+near(f23,exitRow).
 near(f23,private).
 near(f23,infant) :- false.
 
@@ -364,7 +459,7 @@ near(k23,window).
 near(k23,toilet) :- false.
 near(k23,walkway).
 near(k23,galley) :- false.
-near(k23,exitRow) :- false.
+near(k23,exitRow).
 near(k23,private).
 near(k23,infant) :- false.
 
@@ -372,7 +467,7 @@ near(b24,window).
 near(b24,toilet).
 near(b24,walkway).
 near(b24,galley) :- false.
-near(b24,exitRow) :- false.
+near(b24,exitRow).
 near(b24,private).
 near(b24,infant) :- false.
 
@@ -380,7 +475,7 @@ near(j24,window).
 near(j24,toilet).
 near(j24,walkway).
 near(j24,galley) :- false.
-near(j24,exitRow) :- false.
+near(j24,exitRow).
 near(j24,private).
 near(j24,infant) :- false.
 
@@ -388,7 +483,7 @@ near(a25,window).
 near(a25,toilet) :- false.
 near(a25,walkway).
 near(a25,galley) :- false.
-near(a25,exitRow) :- false.
+near(a25,exitRow).
 near(a25,private).
 near(a25,infant) :- false.
 
@@ -396,7 +491,7 @@ near(d25,window) :- false.
 near(d25,toilet) :- false.
 near(d25,walkway).
 near(d25,galley) :- false.
-near(d25,exitRow) :- false.
+near(d25,exitRow).
 near(d25,private).
 near(d25,infant) :- false.
 
@@ -404,7 +499,7 @@ near(g25,window) :- false.
 near(g25,toilet) :- false.
 near(g25,walkway).
 near(g25,galley).
-near(g25,exitRow) :- false.
+near(g25,exitRow).
 near(g25,private).
 near(g25,infant) :- false.
 
@@ -412,7 +507,7 @@ near(k25,window).
 near(k25,toilet) :- false.
 near(k25,walkway).
 near(k25,galley).
-near(k25,exitRow) :- false.
+near(k25,exitRow).
 near(k25,private).
 near(k25,infant) :- false.
 
@@ -420,7 +515,7 @@ near(b26,window).
 near(b26,toilet) :- false.
 near(b26,walkway).
 near(b26,galley) :- false.
-near(b26,exitRow) :- false.
+near(b26,exitRow).
 near(b26,private).
 near(b26,infant) :- false.
 
@@ -428,7 +523,7 @@ near(e26,window) :- false.
 near(e26,toilet) :- false.
 near(e26,walkway).
 near(e26,galley) :- false.
-near(e26,exitRow) :- false.
+near(e26,exitRow).
 near(e26,private).
 near(e26,infant) :- false.
 
@@ -436,7 +531,7 @@ near(f26,window) :- false.
 near(f26,toilet) :- false.
 near(f26,walkway).
 near(f26,galley) :- false.
-near(f26,exitRow) :- false.
+near(f26,exitRow).
 near(f26,private).
 near(f26,infant) :- false.
 
@@ -444,7 +539,7 @@ near(j26,window).
 near(j26,toilet) :- false.
 near(j26,walkway).
 near(j26,galley) :- false.
-near(j26,exitRow) :- false.
+near(j26,exitRow).
 near(j26,private).
 near(j26,infant) :- false.
 
@@ -452,7 +547,7 @@ near(a27,window).
 near(a27,toilet) :- false.
 near(a27,walkway).
 near(a27,galley) :- false.
-near(a27,exitRow) :- false.
+near(a27,exitRow).
 near(a27,private).
 near(a27,infant) :- false.
 
@@ -460,7 +555,7 @@ near(d27,window) :- false.
 near(d27,toilet) :- false.
 near(d27,walkway).
 near(d27,galley) :- false.
-near(d27,exitRow) :- false.
+near(d27,exitRow).
 near(d27,private).
 near(d27,infant) :- false.
 
@@ -468,7 +563,7 @@ near(g27,window) :- false.
 near(g27,toilet) :- false.
 near(g27,walkway).
 near(g27,galley) :- false.
-near(g27,exitRow) :- false.
+near(g27,exitRow).
 near(g27,private).
 near(g27,infant) :- false.
 
@@ -476,7 +571,7 @@ near(k27,window).
 near(k27,toilet) :- false.
 near(k27,walkway).
 near(k27,galley) :- false.
-near(k27,exitRow) :- false.
+near(k27,exitRow).
 near(k27,private).
 near(k27,infant) :- false.
 
