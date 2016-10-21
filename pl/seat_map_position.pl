@@ -2638,3 +2638,9 @@ near(k73,galley) :- false.
 near(k73,exitRow) :- false.
 near(k73,private) :- false.
 near(k73,infant) :- false.
+near(d35,e35).
+near(e35,d35).
+near(e35,f35).
+near(f35,e35).
+near(f35,g35).
+near(g35,f35).
