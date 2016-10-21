@@ -1,4 +1,88 @@
 :- module(seat_map_position,[]).
+near(a1,window).
+near(a1,toilet).
+near(a1,walkway).
+near(a1,galley) :- false.
+near(a1,exitRow).
+near(a1,private).
+near(a1,infant) :- false.
+near(e1,window) :- false.
+near(e1,toilet).
+near(e1,walkway).
+near(e1,galley).
+near(e1,exitRow).
+near(e1,private).
+near(e1,infant) :- false.
+near(f1,window) :- false.
+near(f1,toilet) :- false.
+near(f1,walkway).
+near(f1,galley).
+near(f1,exitRow).
+near(f1,private).
+near(f1,infant) :- false.
+near(k1,window).
+near(k1,toilet) :- false.
+near(k1,walkway).
+near(k1,galley) :- false.
+near(k1,exitRow).
+near(k1,private).
+near(k1,infant) :- false.
+near(a2,window).
+near(a2,toilet) :- false.
+near(a2,walkway).
+near(a2,galley) :- false.
+near(a2,exitRow).
+near(a2,private).
+near(a2,infant) :- false.
+near(e2,window) :- false.
+near(e2,toilet) :- false.
+near(e2,walkway).
+near(e2,galley) :- false.
+near(e2,exitRow).
+near(e2,private).
+near(e2,infant) :- false.
+near(f2,window) :- false.
+near(f2,toilet) :- false.
+near(f2,walkway).
+near(f2,galley) :- false.
+near(f2,exitRow).
+near(f2,private).
+near(f2,infant) :- false.
+near(k2,window).
+near(k2,toilet) :- false.
+near(k2,walkway).
+near(k2,galley) :- false.
+near(k2,exitRow).
+near(k2,private).
+near(k2,infant) :- false.
+near(a3,window).
+near(a3,toilet) :- false.
+near(a3,walkway).
+near(a3,galley).
+near(a3,exitRow).
+near(a3,private).
+near(a3,infant) :- false.
+near(e3,window) :- false.
+near(e3,toilet) :- false.
+near(e3,walkway).
+near(e3,galley).
+near(e3,exitRow).
+near(e3,private).
+near(e3,infant) :- false.
+near(f3,window) :- false.
+near(f3,toilet).
+near(f3,walkway).
+near(f3,galley).
+near(f3,exitRow).
+near(f3,private).
+near(f3,infant) :- false.
+near(k3,window).
+near(k3,toilet).
+near(k3,walkway).
+near(k3,galley) :- false.
+near(k3,exitRow).
+near(k3,private).
+near(k3,infant) :- false.
 near(a31,window).
 near(a31,toilet) :- false.
 near(a31,walkway) :- false.
