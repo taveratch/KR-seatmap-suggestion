@@ -1,5 +1,6 @@
 % :- use_module(seat_map_kind,[]).
 :- use_module(seat_map_position,[]).
+:- use_module(seat_classes, []).
 :- use_module(user_facts,[]).
 :- use_module(rules,[]).
 
